@@ -1475,7 +1475,7 @@ void ANav3DData::Analyse() const
 			}
 
 			// Landscapes are always kept
-			if (Prim->IsA<ULandscapeHeightfieldCollisionComponent>() || Prim->IsA<ULandscapeMeshCollisionComponent>())
+			if (Prim->IsA<ULandscapeHeightfieldCollisionComponent>() || Prim->IsA<ULandscapeMeshCollisionComponent_DEPRECATED>())
 			{
 				KeptLandscape++;
 				Kept++;

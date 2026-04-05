@@ -834,7 +834,7 @@ void FNav3DVolumeNavigationData::GatherOverlappingObjects()
 
         // Keep landscape and other navigation-relevant types
         if (PrimComponent->IsA<ULandscapeHeightfieldCollisionComponent>() ||
-            PrimComponent->IsA<ULandscapeMeshCollisionComponent>())
+            PrimComponent->IsA<ULandscapeMeshCollisionComponent_DEPRECATED>())
         {
             return false; // Keep
         }
